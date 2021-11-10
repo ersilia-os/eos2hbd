@@ -55,14 +55,14 @@ class Descriptor(object):
 X = np.zeros((len(mols), NBITS), dtype=np.int8)
 
 desc = Descriptor()
-for i, mol in tqdm(enumerate(mols)):
+for i, mol in enumerate(mols):
     X[i,:] = desc.calc(mol)
 
-mdl = joblib.load(os.path.join(checkpoints_dir, "automl.joblib"))
+mdl = joblib.load(os.path.join(checkpoints_dir, "flaml.joblib"))
 preds = mdl.predict(X)
 
 y = [None]*len(smiles)
-for i, p in zip(idxs, pred):
+for i, p in zip(idxs, preds):
     y[i] = p
 
 with open(outfile, "w") as f:
