@@ -23,6 +23,9 @@ Using Coarse Grained (CG) models, where several atoms are aggregated into a sing
 * [Source Code](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended)
 * Ersilia contributor: [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
+## Ersilia model URLs
+* [GitHub](https://github.com/ersilia-os/eos2hbd)
+
 ## Citation
 
 If you use this model, please cite the [original authors](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
