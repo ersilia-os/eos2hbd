@@ -25,6 +25,8 @@ Using Coarse Grained (CG) models, where several atoms are aggregated into a sing
 
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos2hbd)
+* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hbd.zip)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos2hbd) (AMD64, ARM64)
 
 ## Citation
 
