@@ -9,7 +9,7 @@ from rdkit.Chem import rdMolDescriptors as rd
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 
-checkpoints_dir = os.path.join(PATH, "../checkpoints/")
+checkpoints_dir = os.path.join(PATH, "../../checkpoints/")
 
 infile = sys.argv[1]
 outfile = sys.argv[2]
@@ -67,7 +67,7 @@ for i, p in zip(idxs, preds):
 
 with open(outfile, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["Log10PermCoeff"])
+    writer.writerow(["log10_permcoeff"])
     for r in y:
         if r is None:
             writer.writerow(["None"])
