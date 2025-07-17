@@ -5,6 +5,8 @@ import numpy as np
 
 from rdkit import Chem
 from rdkit.Chem import rdMolDescriptors as rd
+sys.path.append("../code/")
+from chemeleon_descriptor import CheMeleonFingerprint
 
 
 PATH = os.path.dirname(os.path.abspath(__file__))
@@ -30,45 +32,25 @@ for i, smi in enumerate(smiles):
     idxs += [i]
     mols += [mol]
 
-RADIUS = 3
-NBITS = 2048
-DTYPE = np.int8
+# Calculate CheMeleon embeddings
+chemeleon_fingerprint = CheMeleonFingerprint()
+batch_size, count = 5000, 0
+X = []
+while count < len(smiles):
+    df = chemeleon_fingerprint(smiles[count:count+batch_size])
+    X.extend(df)
+    count += batch_size
+X = np.array(X)
 
-
-def clip_sparse(vect, nbits):
-    l = [0]*nbits
-    for i,v in vect.GetNonzeroElements().items():
-        l[i] = v if v < 127 else 127
-    return l
-
-
-class Descriptor(object):
-
-    def __init__(self):
-        self.nbits = NBITS
-        self.radius = RADIUS
-
-    def calc(self, mol):
-        v = rd.GetHashedMorganFingerprint(mol, radius=self.radius, nBits=self.nbits)
-        return clip_sparse(v, self.nbits)
-
-X = np.zeros((len(mols), NBITS), dtype=np.int8)
-
-desc = Descriptor()
-for i, mol in enumerate(mols):
-    X[i,:] = desc.calc(mol)
-
-mdl = joblib.load(os.path.join(checkpoints_dir, "flaml.joblib"))
+# Load model
+mdl = joblib.load(os.path.join(checkpoints_dir, "RF_REG.joblib"))
 preds = mdl.predict(X)
 
-y = [None]*len(smiles)
-for i, p in zip(idxs, preds):
-    y[i] = p
-
+# Print output
 with open(outfile, "w") as f:
     writer = csv.writer(f)
     writer.writerow(["log10_permcoeff"])
-    for r in y:
+    for r in preds:
         if r is None:
             writer.writerow(["None"])
         else:
