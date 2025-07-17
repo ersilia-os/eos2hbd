@@ -1,8 +1,9 @@
 # Passive permeability based on simulations
 
-Using Coarse Grained (CG) models, where several atoms are aggregated into a single bead, the authors obtain a set of 500,000 compounds with their simulated permeability across a single-component DOPC lipid bilayer. With this approach, the authors are able to cover a large and representative portion of the chemical space. We have used the data generated in this publication to train a simple regression model to predict compound permeability.
+Using Coarse Grained (CG) models, where several atoms are aggregated into a single bead, the authors obtain a set of 500,000 compounds with their simulated permeability across a single-component DOPC lipid bilayer. With this approach, the authors are able to cover a large and representative portion of the chemical space. We have used the predicted permeability of 92,000 compounds (unimer representation) generated in this publication to train a simple regression model.
 
 This model was incorporated on 2021-11-10.
+
 
 ## Information
 ### Identifiers
@@ -13,7 +14,7 @@ This model was incorporated on 2021-11-10.
 - **Task:** `Annotation`
 - **Subtask:** `Property calculation or prediction`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Permeability`, `ADME`, `Papp`
 
 ### Input
@@ -23,7 +24,7 @@ This model was incorporated on 2021-11-10.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Permeability coefficient (P). Cut-off: 6
+- **Interpretation:** Permeability coefficient (P), the higher the more permeable.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
