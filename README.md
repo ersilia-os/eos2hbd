@@ -33,7 +33,7 @@ Below are the **Output Columns** of the model:
 
 ### Source and Deployment
 - **Source:** `Local`
-- **Source Type:** `External`
+- **Source Type:** `Replicated`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos2hbd](https://hub.docker.com/r/ersiliaos/eos2hbd)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hbd.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hbd.zip)
@@ -49,14 +49,14 @@ Below are the **Output Columns** of the model:
 - 10000 inputs: `420.99`
 
 ### References
-- **Source Code**: [https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended)
-- **Publication**: [https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended)
+- **Source Code**: [https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718)
+- **Publication**: [https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2019`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
 
 ### License
-This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [None](LICENSE) license.
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [GPL-3.0-only](LICENSE) license.
 
 **Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
