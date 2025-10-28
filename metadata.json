@@ -8,7 +8,7 @@
         "Local"
     ],
     "Source": "Local",
-    "Source Type": "External",
+    "Source Type": "Replicated",
     "Task": "Annotation",
     "Subtask": "Property calculation or prediction",
     "Input": [
@@ -34,9 +34,9 @@
     ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2019,
-    "Publication": "https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended",
-    "Source Code": "https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718?ref=recommended",
-    "License": "None",
+    "Publication": "https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718",
+    "Source Code": "https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718",
+    "License": "GPL-3.0-only",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-11-10",
     "Last Packaging Date": "2025-07-17",
