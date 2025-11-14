@@ -39,7 +39,8 @@
     "License": "GPL-3.0-only",
     "Contributor": "miquelduranfrigola",
     "Incorporation Date": "2021-11-10",
-    "Last Packaging Date": "2025-07-17",
+    "Last Packaging Date": "2025-11-14",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hbd.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos2hbd",
     "Docker Architecture": [
@@ -48,10 +49,10 @@
     ],
     "Model Size": 241.0,
     "Environment Size": 7765.0,
-    "Image Size": 6699.93,
-    "Computational Performance 1": 70.44,
-    "Computational Performance 2": 43.25,
-    "Computational Performance 3": 39.83,
-    "Computational Performance 4": 90.51,
-    "Computational Performance 5": 420.99
+    "Image Size": 8326.04,
+    "Computational Performance 1": 37.82,
+    "Computational Performance 2": 57.47,
+    "Computational Performance 3": 60.92,
+    "Computational Performance 4": 125.98,
+    "Computational Performance 5": 442.77
 }
