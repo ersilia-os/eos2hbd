@@ -2,7 +2,7 @@
 
 Using Coarse Grained (CG) models, where several atoms are aggregated into a single bead, the authors obtain a set of 500,000 compounds with their simulated permeability across a single-component DOPC lipid bilayer. With this approach, the authors are able to cover a large and representative portion of the chemical space. We have used the predicted permeability of 92,000 compounds (unimer representation) generated in this publication to train a simple regression model.
 
-This model was incorporated on 2021-11-10.Last packaged on 2025-07-17.
+This model was incorporated on 2021-11-10.Last packaged on 2025-11-14.
 
 ## Information
 ### Identifiers
@@ -41,12 +41,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `241`
 - **Environment Size (Mb):** `7765`
-- **Image Size (Mb):** `6699.93`
+- **Image Size (Mb):** `8326.04`
 
 **Computational Performance (seconds):**
-- 10 inputs: `70.44`
-- 100 inputs: `39.83`
-- 10000 inputs: `420.99`
+- 10 inputs: `37.82`
+- 100 inputs: `60.92`
+- 10000 inputs: `442.77`
 
 ### References
 - **Source Code**: [https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718)
