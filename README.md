@@ -50,7 +50,7 @@ Below are the **Output Columns** of the model:
 
 ### References
 - **Source Code**: [https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718)
-- **Publication**: [https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718](https://pubs.acs.org/doi/full/10.1021/acscentsci.8b00718)
+- **Publication**: [https://doi.org/10.1021/acscentsci.8b00718](https://doi.org/10.1021/acscentsci.8b00718)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2019`
 - **Ersilia Contributor:** [miquelduranfrigola](https://github.com/miquelduranfrigola)
