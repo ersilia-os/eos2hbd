@@ -1,6 +1,6 @@
 # Passive permeability based on simulations
 
-Using Coarse Grained (CG) models, where several atoms are aggregated into a single bead, the authors obtain a set of 500,000 compounds with their simulated permeability across a single-component DOPC lipid bilayer. With this approach, the authors are able to cover a large and representative portion of the chemical space. We have used the predicted permeability of 92,000 compounds (unimer representation) generated in this publication to train a simple regression model.
+Estimates how readily a small molecule crosses a lipid bilayer without a transporter, reported as a log10 permeability coefficient. Menichetti and colleagues sidestepped the scale of chemical space by coarse-graining molecules into Martini beads, then ran high-throughput simulations to build a permeability surface parameterised by bulk partitioning free energy and pKa, spanning over 500,000 compounds between 30 and 160 Da. Ersilia supplies a replicated version, fitting a regression model to 92,000 of those simulated compounds so predictions follow directly from structure.
 
 This model was incorporated on 2021-11-10.Last packaged on 2025-11-14.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2021-11-10.Last packaged on 2025-11-14.
 ### Output
 - **Output Dimension:** `1`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Permeability coefficient (P), the higher the more permeable.
+- **Interpretation:** Predicted log10 permeability coefficient for passive membrane crossing, where higher values mean faster permeation.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
