@@ -1,6 +1,6 @@
 # Passive permeability based on simulations
 
-Estimates how readily a small molecule crosses a lipid bilayer without a transporter, reported as a log10 permeability coefficient. Menichetti and colleagues sidestepped the scale of chemical space by coarse-graining molecules into Martini beads, then ran high-throughput simulations to build a permeability surface parameterised by bulk partitioning free energy and pKa, spanning over 500,000 compounds between 30 and 160 Da. Ersilia supplies a replicated version, fitting a regression model to 92,000 of those simulated compounds so predictions follow directly from structure.
+Estimates how readily a small molecule crosses a lipid membrane without a transporter, reported as a log10 permeability coefficient. Menichetti and colleagues sidestepped the scale of chemical space by coarse-graining molecules into Martini beads, then ran high-throughput simulations across a DOPC bilayer to build a permeability surface parameterised by bulk partitioning free energy and pKa, spanning over 500,000 compounds of 30 to 160 Da. Ersilia supplies a replicated version, a random forest fitted to 92,000 of those simulated compounds so predictions follow directly from structure.
 
 This model was incorporated on 2021-11-10.Last packaged on 2025-11-14.
 
