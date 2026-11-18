@@ -2,7 +2,8 @@
 
 Estimates how readily a small molecule crosses a lipid membrane without a transporter, reported as a log10 permeability coefficient. Menichetti and colleagues sidestepped the scale of chemical space by coarse-graining molecules into Martini beads, then ran high-throughput simulations across a DOPC bilayer to build a permeability surface parameterised by bulk partitioning free energy and pKa, spanning over 500,000 compounds of 30 to 160 Da. Ersilia supplies a replicated version, a random forest fitted to 92,000 of those simulated compounds so predictions follow directly from structure.
 
-This model was incorporated on 2021-11-10.Last packaged on 2025-11-14.
+This model was incorporated on 2021-11-10.
+Last packaged on 2025-11-14.
 
 ## Information
 ### Identifiers
@@ -37,6 +38,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos2hbd](https://hub.docker.com/r/ersiliaos/eos2hbd)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hbd.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos2hbd.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos2hbd_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos2hbd_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `241`
